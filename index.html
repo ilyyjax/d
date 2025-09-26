@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TrenchCraft</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Start Screen -->
+  <div id="startScreen">
+    <h1>TrenchCraft</h1>
+    <p>Click “Play” to start</p>
+    <button id="playBtn">Play</button>
+    <p>Controls: WASD to move, mouse to look, space to jump, left click to break, right click to place</p>
+  </div>
+
+  <!-- Hotbar & Crafting UI -->
+  <div id="hotbar">
+    <button data-block="grass">Grass</button>
+    <button data-block="dirt">Dirt</button>
+    <button data-block="stone">Stone</button>
+    <button data-block="sand">Sand</button>
+    <button data-block="snow">Snow</button>
+    <button data-block="wood">Wood</button>
+  </div>
+  <div id="crafting">
+    <p>Crafting: Combine items here (placeholder)</p>
+  </div>
+
+  <!-- Health & Hunger -->
+  <div id="stats">
+    <p>Health: <span id="health">20</span> | Hunger: <span id="hunger">20</span></p>
+  </div>
+
+  <!-- Mini-map -->
+  <canvas id="minimap"></canvas>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/examples/js/controls/PointerLockControls.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
